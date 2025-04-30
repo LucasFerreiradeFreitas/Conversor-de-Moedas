@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <img src="assets/dinheiro.png" alt="imagem de moedas" class="img-girando">
+    <div class="container">
+      <h1>Conversor de Moedas</h1>
+
+      <label for="moedaDe">Converter de:</label>
+      <select id="moedaDe">
+        <option value="USD">Dólar (USD)</option>
+        <option value="BRL">Real (BRL)</option>
+        <option value="EUR">Euro (EUR)</option>
+      </select>
+
+      <label for="moedaPara">Para:</label>
+      <select id="moedaPara">
+        <option value="BRL">Real (BRL)</option>
+        <option value="USD">Dólar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+      </select>
+
+      <input type="number" id="valor" placeholder="Digite o valor" />
+
+      <button onclick="converter()">Converter</button>
+
+      <div id="resultado"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
